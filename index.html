@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparta Tour - Home</title>
+    <link rel="icon" href="foto akun.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand nav__logo" href="#">Sparta<br>Tour</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#itinerary">Itinerary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price">Price List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Unique Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="#"><i class="ri-english-input"></i> English</a></li>
+                                <li><a class="dropdown-item" href="id/index.html"><i class="ri-translate"></i> Bahasa Indonesia</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="slideshow">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/activities/main-banner/ri/ri-pura-besakih2.jpg" alt="home image" class="slideshow__img active">
+                <img src="https://cdn0-production-images-kly.akamaized.net/HR79VPIBrgGK0YSa_batEIiOo5Y=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/805156/original/091363900_1422950439-Taj-Mahal1.jpg" alt="home image" class="slideshow__img">
+            </div>
+            
+            <div class="home__shadow"></div>
+            
+            <div class="container">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-lg-8">
+                        <div class="home__content text-white" data-aos="fade-up">
+                            <h3 class="home__subtitle mb-3">
+                                Holy tour to India 
+                            </h3>
+                            <h1 class="home__title display-3 fw-bold mb-4">
+                                Tirtayatra
+                            </h1>
+                            <p class="home__description lead mb-5">
+                                Embark on a sacred journey through India's most revered spiritual destinations with Tirtayatra. This holy pilgrimage allows devotees to visit ancient temples, sacred rivers, and blessed sites that have been centers of divine worship for thousands of years.
+                                <br><br>
+                                Our carefully curated pilgrimage routes combine traditional rituals, meditation sessions, and cultural immersion to create a transformative spiritual experience. Join us in this sacred journey that has been undertaken by countless devotees throughout the ages.
+                            </p>
+                            <a href="#join" class="home__button">
+                                Book Your Seat <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="itinerary section" id="itinerary">
+            <div class="container">
+                <h2 class="section__title text-center mb-5">Travel Itinerary</h2>
+        
+                <div class="itinerary__days">
+                    <!-- START DAY GROUP TEMPLATE - COPY DARI SINI UNTUK MENAMBAH HARI BARU -->
+                    <!-- Note: Untuk setiap hari baru, ganti semua "day1" menjadi "day2", "day3", etc di ID dan data-attributes -->
+                    <div class="itinerary__group">
+                        <h3 class="itinerary__day-title">Day 1</h3>
+                        <div class="itinerary__cards grid">
+                            <!-- START CARD TEMPLATE - COPY DARI SINI UNTUK MENAMBAH LOKASI -->
+                            <!-- Note: ganti "delhi" di data-modal dengan nama kota (gunakan huruf kecil tanpa spasi) -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <!-- Ganti src & alt image -->
+                                        <img src="https://www.newdelhiairport.in/media/2530/banner-image.jpg" 
+                                             alt="New Delhi" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <!-- Ganti nama lokasi -->
+                                        <h3 class="itinerary__location">New Delhi</h3>
+                                    </div>
+                                    <!-- Data modal format: day{number}-{cityname} -->
+                                    <button class="itinerary__view" data-modal="day1-delhi">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- END CARD TEMPLATE -->
+                        </div>
+                    </div>
+                    <!-- END DAY GROUP TEMPLATE -->
+        
+                    <!-- Day 2 -->
+                    <div class="itinerary__group">
+                        <h3 class="itinerary__day-title">Day 2</h3>
+                        <div class="itinerary__cards grid">
+                            <!-- Mathura Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkT-qQYyAvtJV9d8dxaxYkrSMoAA8jQZU3Q&s" 
+                                             alt="Mathura" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Delhi</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day2-delhi">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Vrindavan Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Vishram_Ghat.jpg/402px-Vishram_Ghat.jpg" 
+                                             alt="Vrindavan" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Mathura</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day2-mathura">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Agra Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/294/2023/09/13/indian-temple-4782312_1280-2457926017.jpg" 
+                                             alt="Agra" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Vrindavan</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day2-vrindavan">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/1200px-Taj_Mahal%2C_Agra%2C_India.jpg" 
+                                             alt="Agra" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Agra</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day2-agra">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="itinerary__group">
+                        <h3 class="itinerary__day-title">Day 3</h3>
+                        <div class="itinerary__cards grid">
+                            <!-- Mathura Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/1200px-Taj_Mahal%2C_Agra%2C_India.jpg" 
+                                             alt="Mathura" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Agra</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day3-agra">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Vrindavan Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkT-qQYyAvtJV9d8dxaxYkrSMoAA8jQZU3Q&s" 
+                                             alt="Vrindavan" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Delhi</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day3-delhi">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Agra Card -->
+                        </div>
+                    </div>
+
+                    <div class="itinerary__group">
+                        <h3 class="itinerary__day-title">Day 4</h3>
+                        <div class="itinerary__cards grid">
+                            <!-- Mathura Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkT-qQYyAvtJV9d8dxaxYkrSMoAA8jQZU3Q&s" 
+                                             alt="Mathura" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Delhi</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day4-delhi">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Vrindavan Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Haridwar_Ganga_6.JPG" 
+                                             alt="Vrindavan" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Haridwar</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day4-haridwar">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Agra Card -->
+                        </div>
+                    </div>
+
+                    <div class="itinerary__group">
+                        <h3 class="itinerary__day-title">Day 5</h3>
+                        <div class="itinerary__cards grid">
+                            <!-- Mathura Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Haridwar_Ganga_6.JPG" 
+                                             alt="Mathura" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Haridwar</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day5-haridwar">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Vrindavan Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="src/Screenshot 2024-11-04 200904.jpg" 
+                                             alt="Vrindavan" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Rishikesh</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day5-rishikesh">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Agra Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Haridwar_Ganga_6.JPG" 
+                                             alt="Agra" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Haridwar</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day5-Haridwar">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="itinerary__group">
+                        <h3 class="itinerary__day-title">Day 6</h3>
+                        <div class="itinerary__cards grid">
+                            <!-- Mathura Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Haridwar_Ganga_6.JPG" 
+                                             alt="Mathura" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Haridwar</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day6-haridwar">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Vrindavan Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Hitopadesha.jpg" 
+                                             alt="Vrindavan" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Kurukshetra</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day6-kurukshetra">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+        
+                            <!-- Agra Card -->
+                            <article class="itinerary__card">
+                                <div class="itinerary__content">
+                                    <div class="itinerary__image-container">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkT-qQYyAvtJV9d8dxaxYkrSMoAA8jQZU3Q&s" 
+                                             alt="Agra" 
+                                             class="itinerary__img">
+                                        <div class="itinerary__shadow"></div>
+                                        <h3 class="itinerary__location">Delhi</h3>
+                                    </div>
+                                    <button class="itinerary__view" data-modal="day6-delhi">
+                                        View Details <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modals Container -->
+            <div class="itinerary__modals">
+                <!-- START MODAL TEMPLATE - COPY DARI SINI UNTUK MENAMBAH MODAL -->
+                <!-- Note: ID modal harus sesuai dengan data-modal di button card (format: day{number}-{cityname}-modal) -->
+                <div class="modal fade itinerary__modal" id="day1-delhi-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 1 - Arrival Delhi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <!-- Daftar aktivitas -->
+                                    <ul class="itinerary__activities">
+                                        <li>Welcome upon arrival at Delhi International airport - After meet and assist services, transfer to Hotel.</li>
+                                        <li>Overnight stay at Hotel</li>
+                                    </ul>
+                                    
+                                    <!-- START IMAGE & TEXT BLOCK - COPY UNTUK MENAMBAH GAMBAR & DESKRIPSI -->
+                            
+                                    <!-- END IMAGE & TEXT BLOCK -->
+        
+                                    <!-- Additional Image & Text Block -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL TEMPLATE -->
+        
+                <!-- Day 2 Mathura Modal -->
+                <div class="modal fade itinerary__modal" id="day2-delhi-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 2 - Delhi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Breakfast at Hotel</li>
+                                        <li>Then transfer to Mathura (about 4 hour drive)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day2-mathura-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 2 - Mathura</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Visit Shri Krishna Janmbhumi and Dwarakadheesh Temple</li>
+                                        <li>Lunch at a Hotel.</li>
+                                            <li>Then transfer to closely located Vrindavan</li>
+                                    </ul>
+                                    
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Vishram_Ghat.jpg/402px-Vishram_Ghat.jpg" 
+                                         alt="Vishram Ghat Mathura"
+                                         class="itinerary__detail-img">
+                                    <p class="itinerary__detail-text">
+                                        Mathura is the Birth place of Lord Krishna. For about 3000 Year it was the hub of culture and civilization.  Taj Mahal built by Shah Jahan in 1630 for his queen Mumtaz Mahal to enshrine her mortal remains. This architectural marvel is a perfectly proportioned masterpiece fashioned from white marble that stands testimony to the still of 20,000 craftsmen brought together from Persia, Turkey, France and Italy and who took 17 year to complete this 'Love Poem in Marble'.
+                                    </p>
+        
+                                    <img src="https://content.jdmagicbox.com/comp/mathura/s5/9999px565.x565.141215113547.v1s5/catalogue/shri-krishna-janmabhoomi-temple-mathura-ho-mathura-temples-asyvg9e.jpg" 
+                                         alt="Krishna Janmabhoomi Temple"
+                                         class="itinerary__detail-img">
+                                    <p class="itinerary__detail-text">
+                                        Shri Krishna Janmbhumi is the Birth Place of Lord Krishna.
+                                    </p>
+
+                                    <img src="src/Screenshot 2024-11-04 192342.jpg" 
+                                         alt="Krishna Janmabhoomi Temple"
+                                         class="itinerary__detail-img">
+                                    <p class="itinerary__detail-text">
+                                        Dwarkadhish Temple is a temple dedicated to Krishna, who is worshiped here by the name Dwarkadhish (Dvārakādhīśa), or 'King of Dwarka'.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day2-vrindavan-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 2 - Vrindavan</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>After visit in Vrindavan, transfer to Agra (1.5 hour drive).</li>
+                                    </ul>
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day2-agra-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 2 - Agra</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Dinner and overnight stay at Hotel.</li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day3-agra-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 3 - Agra</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Breakfast at Hotel.</li>
+                                        <li>Then visit World famous and one of the Seven Wonders of the World - Taj Mahal.</li>
+                                        <li>After Taj Mahal visit Transfer back to Delhi (about 4 hour drive).</li>
+                                        <li>Lunch on the way.</li>
+                                    </ul>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/1200px-Taj_Mahal%2C_Agra%2C_India.jpg" alt="">
+                                        <p>Taj Mahal is closed on every Friday
+                                            <br>
+                                            <br>
+                                            Taj Mahal built by Shah Jahan in 1630 for his queen Mumtaz Mahal to enshrine her mortal remains. This architectural marvel is a perfectly proportioned masterpiece fashioned from white marble that stands testimony to the still of 20,000 craftsmen brought together from Persia, Turkey, France and Italy and who took 17 year to complete this 'Love Poem in Marble'</p>
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day3-delhi-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 3 - Delhi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Arrive Delhi and then visit Akshardham Temple.</li>
+                                        <li>Check in at Hotel in evening.</li>
+                                        <li>Dinner and overnight stay at Hotel.</li>
+                                    </ul>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/New_Delhi_Temple.jpg" alt="">
+                                        <p>This temple is closed on every Monday. 
+                                            <br>
+                                            <br>
+                                            Akshardham is a Hindu temple and spiritual-cultural campus in Delhi, India.</p>
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day4-delhi-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 3 - Delhi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                         <li>Late Breakfast at hotel. After breakfast  transfer to Haridwar (230 km - about 5 hours drive). </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day4-haridwar-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 3 - Delhi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>On arrival check - in at hotel.</li>
+                                            <li>Lunch at hotel.</li>
+                                            <li>Also enjoy the evening Arti at Har Ki Paudi</li>
+                                            <li>Dinner and overnight stay at Hotel.</li>
+                                    </ul>
+                                    <img src="src/Screenshot 2024-11-04 194724.jpg" alt="">
+                                        <p>Har Ki Pauri - is considered to be the city’s focal point, where devotees assemble for a holy dip in the Ganges. Legend says that this is where a drop of nectar fell as a result of the manthan - churning of the oceans - Mythlogically it signifies the start of the world.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day5-haridwar-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 5 - Haridwar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Breakfast at Hotel.</li>
+                                            <li>Then visit Mansa Devi Temple.</li>
+                                            <li>Later transfer to Rishikesh (just 01 hour drive). Visit Laxman Jhoola and Swarg Ashram. En route also visit Sapt Rishi Ashram.</li>
+                                    </ul>
+                                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/91/ea/50/temple.jpg?w=1200&h=-1&s=1" alt="">
+                                    <p>Mansa Devi Mandir (Temple) : Mansa Devi Mandir, on top of a hill near the center of town is reached by cable car or by a road that gently rambles uphill, starting from the Railway Road. The views around the temple are the main attractions here</p>
+                                    <img src="src/Screenshot 2024-11-04 200904.jpg" alt="">
+                                    <p>Lakshman Jhula is a suspension bridge across the river Ganges.</p>
+                                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExIVFRUWFRYYFxUVFRUYFRgXFRgXFxgXFxUYHSggGBolHRYVITEhJSktLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGysmHx0tLS8tLSstKy02Ny4tLy0tLS0tLS8rLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKkBKgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAIFBgEHAP/EAFIQAAEDAgMDBggKBgYJBQEAAAECAxEAIQQSMQVBURMiYXGBkQYjMpKhscHRFBUzQkNSU5PS8FRicoLT4QckRKOywiU0RWNzg7PD8TVklKKkFv/EABkBAAIDAQAAAAAAAAAAAAAAAAECAAMEBf/EADERAAICAQICCAYCAgMAAAAAAAABAhEDEiEEMRNBUWGBkaGxIjJx0eHwUsEUIwVCgv/aAAwDAQACEQMRAD8AAw3VphmqXYaq1wzda5GSIdhqn2W6gwinWkVUy5HyG6MlupoRRUppBiCUUQIqYTUgmoEgE1IJqYFdAqAIZa+iiRXIqEIRUFiimhLpgMAoUu4KaXSzlPERizgoKhR10JVWxEYB0UuoUy5QSKtRWxZxNAWmnHBQFJqxMrYqpNCUimlJoZTViYjQspFQKaZKagU01itCikVAopsoqJRTWVuImpuhqbp4t0NTdGxXESLdCW3T5boam6NiuJWrbpdxurRTdLuNURGiqcbpdSKtFt0utqoLyECK5R3G6FlqtwTLVM9FYbqzwyaGlE00wiuYzrJDjKabbTQGacbFVssRNAooFRSKIBSjHQK7FdArsUCH1fRXwFdioQ5XxrtcUahCKjQVVNRqBpgMGoUssUwtVAXToRi7goKqYWKAoVbERgVChKFHUKEoVYmI0CIoKk0yoUMinTEaFymhqRTBTUCmnsWhUoqJTTKk1HLTWKLFFcy0zlrmSjYGhYpqCkU3kqBbo2LQrkqCmqc5OolujqA4lepugON1ZqboC26ZMrcSrW1SzjVWrjdLraprK3EqXGqDyNWjjNB5KiJRvGKsGRSjKaeaTXHZ20HbTTLdBbFMJFIx0GQaKKEiiCgEJUCqvgaXxuOaaALi0ozGBmMSaUPMaSanUE12agT41E12oqogZAihqNTUaGaZCglihKFHNDUKZCsCpNCWmmctDWmnTFaFFCoZaOoV9kp7FoWKKgpFNFNQKaZMFChRUSimiio5KbULQqW6iW6bKKiUU2oWhXJXOTpot1zk6OoFCpbqJRTZbpDEKdS6E5EhG9SlAHTcmZ9FJPLGHzMeGKU/lRMorhRTSUyJF64UVYpXyK3ESWil1oqwcRS60U6YjQgtFBU3T6kUFTdWJlTiIqaoXJ1YKbofJ01iOJrGkU42KU2bjEOiUm+9J1FWCE1yJbOjrRpq0TbFHSKELUZApRiYFTTUSsDUgdZqo24gkpUhw6QQHCkWvNlDj6KrnPSrLIQ1Oi0fxraDCjBiYyqNr8B0GsdthWIe5q20ON5pAVmSewBudP1qOnBKN1rTPS6Ce8rqYwZmErSeMOD0wusOTNKfU/3xNmPGob2i+2LjVuJKVtlBQE7uaQeHdVjWUYaUyrOFpngXAZ4iM1xWh2fjQ6NMqh5SeHV0Vpw5dSp8+8oy46drkNVxVdig4l9KBmWoJEgSTAkmB6TV5RR1VQNENQoikCKjlopFJ7RxXJIzQoyYASkm54xoLVHJRVsKi5OkGKKA8pKdSAToCRJjhSex8SVNLCisFAPPWlRPOmDcXg9GkVnnEFajmcfXrMMR/wBrToqifFJRTW9miHCNyabqizwbyg6pSgsJXoFLSUoj6oAkTVumCJBkcayQ2enWH5H+6I/7NObG5rg570SAQWSJmYBIaBjpm2+q8PEyW0rLc3Cpq0+RoCioluq/auKKXkw24Q2TcKbCVSINi6mY6RrVq3cAwRIBg6idxjfWzHnjNtLqMWTA4RTfWLlFRKKaKKgUVfqKaF8lcyUwUV0N1LBQrydd5Kmg1XCm8Jur1de6kyZlCNseGJzdIUxENoKzPQExnI3kTYcJrPLxTZVJQuJMBQbIEzHz+q8VdYxaW55odCpkzAuBMG+brNVyMS1IzNECR88fhri5szyzt15nWxYljjSsAjaWWwCwOAyR6aZb2ogi6Vk/ufiFT+ED7FP3i/wUIrQJPIjz1fw6bHxGSHyyXqLPDCfNDqRmSFQRO46+ihLarh2vP0Z84e6mGQVJzFOWdBM2412cHFQn8Kds5Wbh5Q3a2Elt0JTdWC26EputakZnERLVQ5Oni3UeSptQukq9n5VmULv0WI7NacwO03EqAzqVz8uUg5RImVm9pO46Ut8CwztwS0rzb+rur57Z2JQBCg4kC2maNw6R31wZ8f0jWtUzux4CMV/rdrvGdpYznEh1QSoeSu+uqbGeiT0aRT2D24soypXz82q+TjLGkiZ01491YzEF1JgknQQsXAE7j19danY/g+pGRzOoE5VEBqd2gUVA7yJjsoPJtaYvQyTqSHMSsOnM4Ws2gIBMjdbLrQU4BE+WOxhz+HVqvAz81wjoyJ9a6knA/qOd7f4qyScpO2vU0xSiqRXpwTY+kV92v8FcewaCPlFWM3bWf8tWXwH/AHa/7v8AFXF7PBtkcE75R76XT3L1Dfeyu+BoHz1fdOfgpnBPltxJElA1IBBifJg9G4jhB0giMCI+Td72/wAdSXhVc3KFJuAcxTcbwCCR2HjbSmi2nsgSSa3LtW0mB9Kjv9lUHhFjiohLbiCiAbNurMidShQHZTGHd5PMFqCUj61r9Z9R6OspbQ2i0SMuIaA3ysRaY0VOpqyfETktIMeGMXZZbN2y2pscoqFCx5qxMbwCJHUaOdrMfXPmL/DVUNs4f7dvzhxqt2xj2VqbCHUZxykPZknkpAnmk87NpHRVuPiJt0/MqyYIrdJ/vgaX43Z+sr7tz8NU/hFi0uhAbLpjNICcSkbokIAnQ6mlNmbVw6UFJWhs51SMyTmJPlyPra0w9tfDkRy6Z3Qd4uLwY0pcuaUriNhwqLUt7/e4pFvPNXSFmfrNYpenDObcN2vRQkbYxGQrVygj5qcOoacVklI32irvCbWw6BCn0E6yBvMTom95vRl7ewsHxqdNIN+i4rPXar3NEtTdrbbs9fAzx2+7DZCnjymnik+g5efa9qJidrYpJCUhxyZv8GWk20F1X9FR2dtBlC2lKLeX6kp/q/MIOU5efmOsaTWhHhBhftU9x91PkhGMlUb5/jy9SuHSNbvs6vPz9PrsU7TTqwFFCpNzzHxB3iOVArR7OxiEtpSUuSBfxTvtB9dU7u2cMpYVy6QBeClRvI3FFrb5ptHhHhT9KO0fyoY5zxu0WZcfSKpJlgdqNzlhcxMcmqY0mI0qKNqIUJCVkHQhCiD2iqHaG1WFuApcSmE/KjyzzgeSjLOUi5pnAbfwyW0AqSggQUIBKU9RCdN/bWqXE5FFNVZljwicqadfvcN43GrUQG0OjWSG0388gUXA4tSUw4l0mdS2nT9wxSGL8IsKRAdvuIQ5Ygg6hB4cK5gNvYZICA8SbAQ04CZi0ZLmazf5OZS1enUaf8SDjp0+PX50XzWMSdUrA4lMdgnfQsSxnIzkIFlBEmVAWnL87rNuq9MYdqSMoJVunRPZx4zpFwdxHQhKgpSiog3scpJAjnfOAjd0aUZ5Z5V8X2/foUxxwxv4fuVW0nVCAEpy6gKSpR6yoESbUkHzaUIvb5NfDpXVviHSonxiTe0t7ujnUJvEouC4kERdKEA77HMT7Kq8fRFnh7iCnFn5qPuz+Oo8ov6qPMV+OrE4lH2/oa/DUS+j7f0Nfho/+vREru9ysUtQjmIPRlWPTnNGGKdMJShPATm9tNHEt/behr3UJeLQNHU9akoJ7MpTanhNxe0vYScFJboM43QVN0JO0UpN3UKBkkABJJO+cxoitoNfWFdbHxkJLd0c2fCTT2Vg1JqMVNLyV+SZHHrMeuuEDp7jWpZE1aMzg06ZVLwsxvsPUKb2EwRy8LKYTIIgwY+qbHqqsXiMDnzDEvp0slAA7io1bYHbuAbCpcxCioZSSlAt1AVwXC+s7yhkX/V+RDFPqDZcONWQmJhlvMATEwRxjShYd8uozoxjqh0NtDTURlo6Ns7OEwp64g80G3aaiNs7OGinR1IA9SqR49tud+hYll1fLtXZ1imz8eHgeTxrxyxPi2hr1p66i1tAKcLIxr2cTbkmt2t8tNI2ps0acoOpAHqVX3xrs2c0OzxyCe/NNFwVyrl1b/jcCWao2t+v4fbs9RTGbQDaw2vGPAqiPFNEGTGscanj8ZyKQXMY8ATFmmiJ14dFGc2xs06h09aEn1qrrm2dmqEKS8rrSk9t1UFBXG/Hf222C456lS+nw+/b6A1YhSUcr8NdyZQZ5JsmDv06RRcDiFOt8onGuZb3Uy2AIN5tXRtvZ0Zcr0aRlREcIzRFfHbezcikcm8EqBBACBM66KqLHtV736fcLWbV8u1dnX9ewbb2iFAIfAyEAB9EFkg2EzdM3EKEdN4qXxO1MFlvzEnutVW9t3CgqU2p8SAMq0IW2BvGULGvTU9n7XREtTkH0K7EdLJk+YeyNDTmxt9fkWQUoq2qLQbGa+xa+7R7qR2vhW2QjLh2FFSynnJSlIhC1kkhB3IO6r/CvhaQpOhEi0eg0ntdsKcwoIBBxEEHQgtOi9LgwJzSd+bKs+aSg2u73M2MUmY5HAgjUcobRr9B0HuohxEfRYIR+uviB9hxUOua0uO2W0sjkiwkgkEFDRm6bXSTNiO6vtnbPaT5amFzOQJS3A3nRI4DuHXXQ/x8XZ6v7mLps38vb7FRh8M+tIUhjBlJ0UHFwd0/I0u448lRSW8LIIBHjSQTusxfdWqxbwQgBjk1GYyAjQieaAQJ076qk4cqlxSG8xlRKSQQpNpKOUico14UvQY/4+/3HWWfXL2+xRL2i4BPJ4YyYAAdnWDq0NNbxYGjsYtxRSgIwuZRgDx0zrHyUbjv3VZqwUzzGgogTyesTe2aImBeKNyjxy5UMgAhQzBIGacpMBQvHr30Ogx/x9/uN0sv5P0+wq6xiEAqU3hABqcznV9nSSscsfNwp/VAdk9hbHA1qsI9KFl1SLKVpBTk0B1Mz7aXxGFlSvGpQk5SBY80C0pgRpxOto1qLhsXZ7/cR5snb7FDh8S44cqBhSb2h3cCfqdBq12WgOstulCQVoSogAQMwmKs8KhCUZAoKUAonSd/ADSQNKQ8HB/VMP8A8Fv/AAiqOJ4fGoWl1/ctw5p66b6vsScwiRuHcKVbwWdUylCUQVLIEDf2mjba2hySZylV4iQBO7Mo+SOmlWHUuAKWoO2JSkJhhJB0CNVGd6vRWOGBXbNutvZD+J2gpaCnDJhEXdcMIMcNCv0DppJ3CJdVkfK3lEZtYaABEhKRbdEmlNr7SxEjk0NqSU3CzHRbnpt1UBvb+MSnKMMxHQo/xq2U3zK9LXytLxVi+OwKEvJQjAIUg5czhJgSb9cCobSwiGgOSwLbsn6swOvrqa9s4o/2VrsUv+LUfjjEjXCN+cv+JRS3i9tvrv8AX8UK4ZKktfPvW30/Nk38G2Gs4wbRXlBKAhPlEaTG40HA4NK2ypzBstqkwnIkmANTbffuqZ26+DBwjc6RmVM2/X6RUjtnEfoSe9XvpdL0tbbvnv5B0z1J6uS5WvMV2bh85VymCZbSPJlCZVM+r21BlnM8UfAWUtieeW03jhbeacO2X/0FPequfHb36AO9VPW7e2679u8To8lJauT7Y7930+gntLCkKSlvBMrmJVkAA7qZ+C4VJAXh0kkqHNQkwRoTYmDr1UQ7ceH9g9KvdQl7WWTJ2eCeJKp9VGKSSTrb6gljyW3fPvWxLGY1KVHkUgAwlUqIEXiBeAOjhupf41fFshVFswmDG8c3Q1F3aalROAPNsOe5ao/Gjn6EfOV7qveXvKFw0uuvNFZh9rOpBUeRcATmVmQUqA6QmAD0VaYXb4jnYIkRMtKC7DUxFhWX2diUvJyBJHRe6VWgK1tp2DhVl4OYlTbuRI1OUKyiQCQkKKFAwSBB66D5bopU32mnwmOZxAzNIUnL5QWkAydI1nfVbtnb6cMvKpEyAZGUeyo7CZWgKbQUlQMrBKgEk2AEJMwE988KhtXDqLgLjLbkAHUzHASgVke2V29uyzYneJVz7aL/AAzalIC1NrRO4tpJ7QDbtrinUCxJ6uTFVONw6ENqWyvFsqTEjlMzY0zc4SbDeeFObG2kt8KSXUEoizikwoHeCoQDpbpq1wje3v8Akr6RrZ+34Ou7QQk+S5HFLeb0JJPorjm1UJTJ5UC30Dg1MalPTVNi3MU244eYUJC8pHJwSPJskjfakkbXfebKXhk5yTLUJUIUIkknfFN0cP1sGuX6kaBnbGZxDaW3MqpGZSFpAhJVcKTHzY131ZuExqayezfDD4QtLbbZSVGMykggWm4Cq0KmsQBPKNno5NY9OYx3Vl4iLjJU68WaMMk4u1fgiDrzqbhRI7jSSsSF2WCqN9g4noBMBY6FX6aqG/CtTzi2W0hKkZpUoWOUxGoO/eOsbqZwfKkq5ZTRuMhSUyddQOyrpJwXPwYkJ6mq270anZO2cgCXCCiYDoBt0OJ1Sfz01b7QZQ7yZTiUIKFhaVJU2q+VSdFW0Uawe2sYWQhSUAlRyzJEJ1uRqOg2pRraSAP9XQeJJP8A4qY5KlNIacVJuMvQ3vwRQP8A6gntRhfw11OGI/2igfuYb3VhfjRP6Mz3mrHYziXkqKmWkkKiwm0Azc9J7qslxDirf76Fa4fG3Vv98TUlqP8AaaBb6uF6OjoqGQCf9KIE683C6ebVLiWkIbWsNNEpSogZBcgEgVUtbW44fDg/sJ9ooR4rUrQZcNjTp3++JsCpu/8ApRN7G2F69yOiuLdbOu0xHDLh/wAHX31k1bXA+gw/mI91RY2wVONp5FgJUpKSQ2mYJ1Foo9PIHQYu/wAzVl5i/wDpKAQAQEsxA3fJ3qLmLYkTtNfmN7rbmuFqWUyB81HmI91Uu09qKadKEpagJBukTJ6jSQ4rXsh58Njju78/waAY7Dj/AGk5FwYQkWPCGaawW28GhLbKH5yhKE8xcmBAkkAViz4SuaANdQ/kaTxnhO9HkNkjScxE99Fzc9mgKGOO6vz/AAbnaG0WzIPO6Inv3d9VL211GyR3e/d6CONLMOZ2ErVAJRJAsB1X0qrfbdLmZD6Ut5TCQYM5TFsv1o31TB3JpbUWzk1Fd/Ui9aS4rU5Qe89fE99NYdhM3E663rF43wucYdUxlz5SBmzAEykKuAnp6BatBsHGO4ptLyFpSFA2KFKIIsQTzRYg6TUzYfg1X4sTFlWrTXgh7bDhbQFIZSslQEZRpBJO7hxqvw21woT8EVYwTDYEjXU1Dwm2g9hG0rKgvMsJACcoBIJklSjuB3d1Zd/GvN/IqS2FqzqzZSCpYkmVSd1Pw+GLhvT7xM2WWvbbuNb8ZCf9WCR+spAPYEg0RGNQdGZ6oP8Alqg2elxb4zYhGQ3CQU5rImIy7yPTV88whTRK3nEGCeaQDlTrCSDvkd+kCbuhhV0inp5J02w3KD7EDrKR7Kz219vLacCUMtKB0KZUe0CINIbVZZhcFSua2Wy4talKz3kJJym19N9D2K0ohWVRbE3ASmdSAb9AnTeanRwitVBWScnSZssIcyEqKQCRJAG+qN3bLhUoNsJgLUnOpaQCUkpsACTcGrTCbKJbSS67pxb/AAVln1hLhCSqBOtkhQnSICvJgwPm1TwyWqVOx+JlLSth3E4/EXC3m27xDbalnvNBViADBxjp6Q0IPSJGlDdTMCUjNeCdN08aDyA+unvrvY+ExSinq5/Q4c+MyqTWn3ItIWDCTACQCTGW+hzGyTeLcKe8H3l8oM2ZS0ySZAMCVgzpcJj/AMTQMRhlsuKVySg2FKGbVKm05iLmbkAaVzYGOLq5yJTyYEhAPkWSTBMWEd5rly+U6NJGk8DXZW7cmY1gHyl8PX01Z7WHPH7I9Zqo8EMXyjqzGUFJOWCMpK9AOER1EmrbbflJ/Z9prn5o/wCw6GB1jSMltDbXjFhDkEEzYxCYgSLboNM+C+K5FPNGcGAE5svEEk8RAt+tVdtrAFCi4lCoUkFRUm3KkXCTF9JPSTwprwVBW7ZBIJJTeSLQbdk95rdNrTdHPV6kaLE4ZtbC18mkEpUfJSSDe0xVFgcKmFXMC4SMsWuN069NaPEpIYdH/G7sy4rPYAyFfndWJTkm9+s6WmLS26jNeBK/6w3+360xXri/Jrx3wTURimrGC4m8dlewrTzas41XJFXCuos8x2KzGLeMW8aNLTnn1Vt8Rgmyg8xPmp91YPZIPw56/wA5/o+fXoSxzO6l4q9ap9Q3D1p37Sk8KMOlLSV7yriejprOrxSFIUBN02JScp32PZWl8L0eJT+17RWbcwwCDEwBa5p8FOK1WDNdvSZdh05iJMdZrff0bMhxp3PzoeIE7uaivPUOXivSf6MQOSdj7X/KmtPE30boy4K1qzTbQwDYZcUEiQhfoBrzDwssWldBH5FesbWT/V3f+Gv1GvJPC8HxXUrr+bWbhL1bs0cVWnZFI66SRe8i46Z79BW/2YAHMMggEKWkHzhu3615wFAd89wr0zZaByuHnUONx0c4TWniOSKOH5s03IpIT4lnnBKgMx3i0+L151ebeG0fCbAAcm3zRECRJAsJuTXqzmAgABxUAACzegEfVrynw6ATilC5hCBJ1silwyg5fD/Ycqml8X9Cfg6nxpPR7DVpjPbVf4Mplaj+dDVjtAWqZfnQ2F/AzYYTDJGHTCRzkc6wvrrAvrTC2khvyR5PDoruGRDCP2a7iR4r92ua71PfrNqqkeVeFC/6y9rqkdEhKa9H/o7RGCa6S4e9xdeaeEIPwl4gjyzNidwHCvU/ANmMCx1K9K1mt/Er/Sl9PYxYH/tfj7iP9JHyeHSd+JQPQqqnaLCAoQkD3VZ/0kG2GH/uEegH31WbTVzu+qIWoRS7y905SvuLjluTSlUTAT3GAe29Cxjq1NG8lZTlzEX0XfKkW3dYMV9tJPioAk820EzcWgUrs7CPlRSoLy5ZSXOakLF7ZrjeJ/WNbeHmv8dxre+fkYuJxt51O9q5eZTY/BvLbSPKKoE86EpBkT09I0Aq0wogrtF4HUNPX3zV01sttB5Rx8JlIkwtZkkk2KNebMGRfTdSW0NnIYUEIWVSMyipAQZM6wb9fCBupcy+AbDeuzQ4AeKb/YT6RWNw2O5RagsgoHOknKrnX1AmQRA6+itnhR4tA/UT6hSGP2QCuWULSL3ykmCBcCJiyedpYQDVHCx3bLuJlsjN/Cm+aCEnMQE5gJ4X7Zr5WLbG5v0e6p4lWRRQUq5ihqFATAVBniOnfS6Ur+t6/fXZhx2aEVFckcef/H4MknN3b7wzmOQ9h1l0EqBgXkk82BNjqCLACB03V8HktsuzMXyqJkgoWkpMQdAogHs6qsx4GPElAUlIUJLkjKCJhKUg5tVE6bt0Uy/4JuJy5XcPqJC8qE2sd5JkaiL6zNY6VUbr3sJ4JYjxRCcrjiFrSTOVWSdc0aExbppnbr7sp8UkWP0nV+r004MI3hUjkoeJEHk0JTERqZvPsqp2xj3FZYw6yRNpSNY39lZZ4pOdqP75miOSKXzfvkOL2g042hC2XFQpBMNlSZTrB37776S2ChTfIKTh1EpAz2ynME86JEazWj2Pt4IZQHMMc4AEZiRawOl7RUh4QFNkYdKbqN0qnnEk37TV8MdIqlktlZikulpZJSiUr5pSVESD84KE91ZbZr8SCoT3buE1fbRZzyRyiJnmpW4E3JJtMCs+xstSealJPXJPeb1T0N3fsXdLVV7lX4NlYeaTyF+VHOUhWkyOdoOvqr1FTjuX5H+8T7qxmzlOodQVIVAUCeJCb2Faz49FxyL3mj31M8JSaqN/v1FxTilu6PPGMOtvHulaYBLt/m845gM0X1rbrDmW60QI+jVP+OqHaiFOur5pQFGb+ULaTTB2eophWKchQmM6iSO/op54nJp/0CORRTB+F+OTyM5wq4hATzp656CazC9rSCOScEiNB6b1pxsNvUKJO8kn1D+dM4fYqInlAANSZ36W308cMYpFcs0meXJw65mvQ/6O15GXCXEplzegq0Snp6avMPsVpVuWyjepcjuT/wCaca8GMObnFJIFzAM+unnFSVMSLado7tLGpLLgLyboVzchk802md/try7brxe5PKkjLm8rfOXSOqvUV+DmF1GJSOA5xj01H4iY3YodyvfSwxxjyGlklLmeRY5lxzUC08d/ZWt2PtEKfZSUqRCgc5FhlkzHZXoA8HMMUgjExI/3ljHCkviBjfik8NFe+mlFS2YItx3Qy5igR8uN18g6bR+dK8x8OGSrEkpVmlCDMbxI0jor0VPg/hf0lJ7F+w11WwWL5cSIAmIcn0C9LDHGLtf19hpTlLZnk+yVLamUKVPAdBFMPY1SiAWnAJueivSvihjQ4kdnKg+lND//AJ1hUxiZsdzoMb91M4pu2KpNKkKsYxJaSkOkkpESkCJA4JHHfwouISvIZcEBMnmgWAnWa4jwaw0AfCTbf42e8g1zEbCYgzjl6aEOkR7azy4ddXsi6OZ9fuYLFlzlnClBILilA8mFSJ1kjSIr0vYLbreEZAbQeYk3cIPOBVcZDxpJvwWSpEt4hJ1AzIKJi3lGZ0rU43DLaZbQ22XYAFlIFkpibka0cqbVJWHG97exh/Ddl1fwdSkJAS+knKsqtrJlIgWqi2k5mVCVQeiO69arwjaeeQlBYcRCwZVkg2I1JjfWbe8Hlq1STHAp/wApqRx2le1EeSm66y7QVpM5yd0EJi9t0eulttNoeyBSlpKM2iQZzR+sOFLNbIUDMmRxV7Jph1pQ+r3irccKRVknbLTZuIShCUAOKyiJypvG+M3GkNu4pTjuZIAAQkQuZ3ncTxomHUsAZY6gZ6eNVOKfezqJS2QT9eDG6dd0VMkbWwITp7mqZU7lSCG4gb18Oqg/BWcROIKnBdMAEcomJQRFgBMzAO7nGb1/x6oW5NH3o91ACmQLlyDBUMyFpkCN8Ade+lwQkr2DlnF1uW2Cw2HRy5BegPEpHJyDoINoJkdlVz2PVmVkQvLJyxMZZt84bqrwjDE3IAJlQMRM2ISLAwTpxpkPoFhiUAbhKvwVe7XUVKn1i7uQfR4frDqj/wB01wITfMlkWt4zU8LLplOxn97LZ/5SvUF0RzY+IWZU02TYfJubtBZVLaG0srnTmjmMiBFlgWGn0lz01JDI+q154P8Anp8bEf8AsUfdu+xdETsd8f2dEzbxb8d2apaJpYs2ylN8rWYK8kuJ07F+2hqZH1W+x1P4qdc2W+olRw7ck3OXED1Go/FTv2Df/wCgVLRKYoGAfmj75PvplDYQCIEkQfGpMR0A69dERgXBf4O2SNJU9l7RNROFcn/V0SeC3PVaKloFMCGd4/xp99ETm4H70V8plY/s4PU6faqvsiv0f+9/nRtEph2kcW83QXRfrgeup4ptRTJU0yNBlSla46hJpMIV+j/3v86Ph1KSZ+ChXW7Yem9S0SmAS8ZIBdPSGkX7zTfLlDYgvjMSfkWbhNoib3vRzhVO3eWRwbQopSnrjyj11JezUEeWsQIBzk2Gm+9DUgqLA4fFqHznv/jsH0ZrU2vGQ2rnOiSkWwrJsJMeXendi+DyVEqLzuUWstQJPWDpV4NiNwByj0XPyy6VyQ8YMx7eLt5bnbhcPP8A1KZZxAIXz1WTP+rMcRxXWmOwm/tX/vle+vkbCRfxz9x9saGsOgrEObszn3GHH+ag4l+CoZnBzCfkGT5JkkwvhV98VAW5d7teNRXshJjxz1uDxGvGhqDpMeraG4OO6bsMx6y5RsLtG48Y6QbEfB2Qb/v1pDsBP6RiPvv5VFWwE/pOJH/O/lR1A0Mzb2LglOd6xIth24kGPtNK41jyDOd/q5Bu44fKVpHfB8EycTifvv5UFfg4nT4RiPvv5VNSJoZRYp9aTq/BAVZhrQ3As5rTmx0lUOKfcQm4yu4dABOl1HMB2xTyvBoc3x+I5pn5aOGtuirJ5x5tJgcskAwlXl6WAWLjrINDWg6AGLxqmU81DLt/oyEG4mSAT7NazGPTyqytTBSTFkuoAsAN6OiuYxorWVHAuAkzAWoD/p1AYQ/obvnn8FNsK7B/BE/ZHtdb91LvYAC4QBG4uIPtp0bPUf7E92LV+GhHZ5/QnvPV+GjaBTEDhAYhCCb/AEqfVmpdTIG5v7xP8SrH4vUk5k4N394qUP8ADSTrZtGGVO8ZlW9VG0K00AaXkVmSGZvq4Drb7SvnEphMFmSDI5TS9tXL11TR/Rz56vxVFIUkz8H71q3/AL1EFMVWRxa88/jqIegH5KD+sfXmoy0H9HA/fUf89qCttX2A71fxKhKZxRB0LXnH2mgkj9TvPvqYUtJkMgdc/joBSr9HT/8Af+JUAessujjFMN9fupHCb/zuq0Y/PfWY2HEjp/PbUwUg637PVXHvZQmPJ7fbUBYeSd4A6TJ7hREIG9U9fuqA0/PGoK8o9vqNEgxI3T+eiorE6zXXNO0euiNado9lSiWQQyBx6qWYwrXOKyAcyjzlJyxJsUghc08de72VT4ry1/tH1mikBsYTg2SkHMick+UYlRiP3Ru1JrgwLJIVnSlJMJTJKrWlX1Z1pVeg66giiKWzeEYkghBlYCedNuyNw1mJVuiotbOQonmgnMRkJEpAPziBJ7O+qw7+unMJ8m51D1miAJ8FbHOK0BJUYSmZ1jSLDpNEGGazKkiPmwtJHWqSCZsbcarVa93sqfGgEcbw7ZKiVgakBO5KTc3MyqIE8TaptttqFkDMQpWUKOaNBF4B3kXsN9VrvtqJ3dftNQhaMYRoGFuIUYmEm2mhXpNdYwrQBC1DNKdNySd3T0nSarzXG/b7KhBxDKOVKTlySfnWA18oamKI6yiUkBISoEyVwnXpMyAbi01Xj8+mvh+fTRIWaMOyZMgCTllYjKOICs8n20NOHaCcylSRCikcDZKPKve56BupBP59NfGgQfZZagZikGJkLJ0A1jQkqmAJhJqacG3mPOSUpGgWJVwUSSAOoGqtG6pt6VCDrOHaMleUXtChkHWCrOeyoNYRmCpR/WhOmWYyiTMkxreBupVyuJ1okH22RlTMXSPVpX3JfkGjDyU/sj1Cvhu6/fSUPYutB4ntA/O6gLYCjzgFdaQT6aeqDmlCg2V6sIj7NHmJqBwzf2aPNFO7j2UPEeSOuoQRVhWx9GnzR7qXVg0G+VPmj3U6576ivSgErjh06hCD+4mh/Bx9RPmp91Nn3+oUuaID/9k=" alt="">
+                                    <p>The ashram was built in the memory of Swami Vishudhanand, the saint better known as Kali Kamli Wala (the saint with a black blanket).</p>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wyK5TKlhzLg-tzI_bPuv2ltC-A4iPgc54Q&s" alt="">
+                                    <p>Sapt Rishi Ashram is a beautiful ashram complex in Haridwar.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day5-rishikesh-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 5 - Haridwar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Lunch at a Hotel / Restaurant in Rishikesh.</li>
+                                        <li>Evening return back to Haridwar.</li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day5-Haridwar-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 5 - Haridwar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Dinner and Overnight stay at Hotel.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day6-haridwar-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 5 - Haridwar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Breakfast at Hotel.</li>
+                                            <li>Morning transfer to Kurukshetra (4.5 hours drive).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day6-kurukshetra-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 5 - Haridwar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Lunch at Hotel in Kurukshetra.</li>
+                                        <li>Visit Jyotisar, Bhisma Kund, Sannihit Sarovar, etc. </li>
+                                        <li>continue drive to Delhi (about 04 hours drive). On arrival transfer to hotel.</li>
+                                    </ul>
+                                    <img src="src/Screenshot 2024-11-04 200812.jpg" alt="">
+                                        <p>The Purans tell stories of how Lord Brahma created the Universe from Kurukshetra. The legend of Shiva and Sati comes alive in the temples dedicated to the mother Goddess one sees here. The Mahabharata battle fought here, extols innumerable places of pilgrimage, not to forget Kurukshetra as the land of Bhagwad Gita.	
+                                            The Brahma Sarover is the best place to begin the pilgrimage. 
+                                            Belief is, that Lord Brahma conceptualized the site of the tank, giving it special sanctity. 
+                                            </p>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_S7gh1lXlri_jAuZP33SysP_cWcjrSn36A&s" alt="">
+                                        <p>Bhisma Kund is the place where it is believed that Pitamaha Bhishma lay watching the famous battle after Arjun, created a bed of arrows for him.</p>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORTLHniNxwtS4xfgFziI5G1-5Tcfb4ycQLA&s" alt="">
+                                        <p>Jyotisar, on the bank of Jyotisar Sarovar wetland, is a Hindu pilgrimage site in the city of Kurukshetra in Haryana state of India.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade itinerary__modal" id="day6-delhi-modal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Day 5 - Haridwar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="itinerary__description">
+                                    <ul class="itinerary__activities">
+                                        <li>Dinner at a Local Restaurant.</li>
+                                            <li>After Dinner at a nice Local Restaurant and then transfer to airport to board the onward flight with sweet memories of India Tirtayatra Tour.</li>
+                                    </ul>
+                                    <img src="https://www.newdelhiairport.in/media/2530/banner-image.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tambahkan modal untuk Vrindavan dan Agra dengan format yang sama -->
+            </div>
+        </section>
+
+        <section class="price section" id="price">
+            <div class="container">
+                <h2 class="section__title text-center mb-5">Price List</h2>
+        
+                <!-- Price Table -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="price__table-container">
+                            <div class="price__table-wrapper">
+                                <div class="table-responsive">
+                                    <table class="table table-dark table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">No of Pax</th>
+                                                <th scope="col">Cost (3 star Hotels)</th>
+                                                <th scope="col">Cost (4 star hotels)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Min 2</td>
+                                                <td>USD 599/- per person</td>
+                                                <td>USD 691/- per person</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Min 3 - 4</td>
+                                                <td>USD 571/- per person</td>
+                                                <td>USD 649/- per person</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Min 5 - 6</td>
+                                                <td>USD 515/- per person</td>
+                                                <td>USD 592/- per person</td>
+                                            </tr>
+                                        <!-- Table content as before -->
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Cost Information -->
+                <div class="row mt-5 g-4">
+                    <div class="col-md-6">
+                        <div class="cost__includes">
+                            <h3 class="cost__title">Cost Includes</h3>
+                            <ul class="cost__list">
+                                <li>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <span>05 night hotel accommodation</span>
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <span>Full Board Meals - as mentioned above in the tour program</span>
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <span>English speaking Tour Guide services</span>
+                                </li>
+                                <!-- Add more items -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cost__not__includes">
+                            <h3 class="cost__title">Cost Does Not Include</h3>
+                            <ul class="cost__list">
+                                <li>
+                                    <i class="ri-close-circle-line"></i>
+                                    <span>Any Tips</span>
+                                </li>
+                                <li>
+                                    <i class="ri-close-circle-line"></i>
+                                    <span>Personal expenses</span>
+                                </li>
+                                <!-- Add more items -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Hotel Information -->
+                <section class="hotel__section section" id="hotels">
+                    <div class="container">
+                        <h3 class="section__title__hotel">Hotel Details</h3>
+                        
+                        <div class="hotel__groups-container">
+                            <!-- Delhi Hotels -->
+                            <div class="hotel__group">
+                                <h4 class="hotel__city-title">Delhi</h4>
+                                <div class="hotel__cards-grid">
+                                    <!-- Hotel Card 1 -->
+                                    <div class="hotel__card">
+                                        <div class="hotel__image">
+                                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/449935526.jpg?k=91112dab1c5e437b58530fc4fb05ea9648de019571b2d7cf33f0d8d02e2ab966&o=&hp=1" 
+                                                 alt="Caspia Hotel" 
+                                                 class="hotel__img">
+                                        </div>
+                                        <div class="hotel__content">
+                                            <h5 class="hotel__name">Caspia</h5>
+                                            <div class="hotel__stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Hotel Card 2 -->
+                                    <div class="hotel__card">
+                                        <div class="hotel__image">
+                                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/449935526.jpg?k=91112dab1c5e437b58530fc4fb05ea9648de019571b2d7cf33f0d8d02e2ab966&o=&hp=1" 
+                                                 alt="Caspia Hotel" 
+                                                 class="hotel__img">
+                                        </div>
+                                        <div class="hotel__content">
+                                            <h5 class="hotel__name">Caspia</h5>
+                                            <div class="hotel__stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Hotel Card 3 -->
+                                </div>
+                            </div>
+
+                            <div class="hotel__groups-container">
+                                <!-- Delhi Hotels -->
+                                <div class="hotel__group">
+                                    <h4 class="hotel__city-title">Delhi</h4>
+                                    <div class="hotel__cards-grid">
+                                        <!-- Hotel Card 1 -->
+                                        <div class="hotel__card">
+                                            <div class="hotel__image">
+                                                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/449935526.jpg?k=91112dab1c5e437b58530fc4fb05ea9648de019571b2d7cf33f0d8d02e2ab966&o=&hp=1" 
+                                                     alt="Caspia Hotel" 
+                                                     class="hotel__img">
+                                            </div>
+                                            <div class="hotel__content">
+                                                <h5 class="hotel__name">Caspia</h5>
+                                                <div class="hotel__stars">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Hotel Card 2 -->
+                                        <div class="hotel__card">
+                                            <div class="hotel__image">
+                                                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/449935526.jpg?k=91112dab1c5e437b58530fc4fb05ea9648de019571b2d7cf33f0d8d02e2ab966&o=&hp=1" 
+                                                     alt="Caspia Hotel" 
+                                                     class="hotel__img">
+                                            </div>
+                                            <div class="hotel__content">
+                                                <h5 class="hotel__name">Caspia</h5>
+                                                <div class="hotel__stars">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Hotel Card 3 -->
+                                    </div>
+                                </div>
+
+                                <div class="hotel__groups-container">
+                                    <!-- Delhi Hotels -->
+                                    <div class="hotel__group">
+                                        <h4 class="hotel__city-title">Delhi</h4>
+                                        <div class="hotel__cards-grid">
+                                            <!-- Hotel Card 1 -->
+                                            <div class="hotel__card">
+                                                <div class="hotel__image">
+                                                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/449935526.jpg?k=91112dab1c5e437b58530fc4fb05ea9648de019571b2d7cf33f0d8d02e2ab966&o=&hp=1" 
+                                                         alt="Caspia Hotel" 
+                                                         class="hotel__img">
+                                                </div>
+                                                <div class="hotel__content">
+                                                    <h5 class="hotel__name">Caspia</h5>
+                                                    <div class="hotel__stars">
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Hotel Card 2 -->
+                                            <div class="hotel__card">
+                                                <div class="hotel__image">
+                                                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/449935526.jpg?k=91112dab1c5e437b58530fc4fb05ea9648de019571b2d7cf33f0d8d02e2ab966&o=&hp=1" 
+                                                         alt="Caspia Hotel" 
+                                                         class="hotel__img">
+                                                </div>
+                                                <div class="hotel__content">
+                                                    <h5 class="hotel__name">Caspia</h5>
+                                                    <div class="hotel__stars">
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Hotel Card 3 -->
+                                        </div>
+                                    </div>
+                            
+                            <!-- Add more city hotel groups here -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section__title text-center mb-5">Experiences</h2>
+                
+                <div class="row justify-content-center g-4">
+                    <!-- First Experience Card -->
+                    <div class="col-12 col-md-6">
+                        <div class="experience__card" data-modal-target="singaporeModal">
+                            <div class="experience__image-container position-relative">
+                                <img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/10/1494404731688-67f6c0bb680893dac39c49bbf7dbf900.jpeg?tr=q-75" 
+                                     alt="Singapore Airlines" 
+                                     class="experience__image">
+                                <div class="experience__shadow"></div>
+                                <h3 class="experience__title">Flying With Singapore Airlines</h3>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Second Experience Card -->
+                    <div class="col-12 col-md-6">
+                        <div class="experience__card" data-modal-target="hotelModal">
+                            <div class="experience__image-container position-relative">
+                                <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Palace_New_Delhi/images/3x2/TPND-Exterior-Night.jpg" 
+                                     alt="Luxury Hotels" 
+                                     class="experience__image">
+                                <div class="experience__shadow"></div>
+                                <h3 class="experience__title">Stay at Luxury Hotels</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="experience__card" data-modal-target="sapiModal">
+                            <div class="experience__image-container position-relative">
+                                <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Palace_New_Delhi/images/3x2/TPND-Exterior-Night.jpg" 
+                                     alt="Luxury Hotels" 
+                                     class="experience__image">
+                                <div class="experience__shadow"></div>
+                                <h3 class="experience__title">Stay at Luxury Hotels</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Singapore Airlines Modal -->
+            <div class="modal fade" id="singaporeModal" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title">Enjoy Flying With Singapore Airlines</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://assets.singaporeair.com/is/image/singaporeairlines/economy-ergonomical:image-card-2-column" alt="Economy Class" class="mb-4">
+                            <img src="https://s27468.pcdn.co/wp-content/uploads/2024/06/SIA_Fclass.jpg" alt="First Class" class="mb-4">
+                            <p>Singapore Airlines (abbreviation: SIA or SQ) is the flag carrier of Singapore with its hub located at Changi Airport. 
+                                A member of Star Alliance, the airline is notable for highlighting the Singapore Girl as its central figure in the corporate 
+                                branding segment and not significantly changing its livery throughout its history. Widely renowned as one of the world's best carriers, 
+                                the airline is ranked as a 5-star airline as well as ranked as the world's best airline by Skytrax five times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Hotel Modal -->
+            <div class="modal fade" id="hotelModal" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title">Luxury Hotel Experience</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Palace_New_Delhi/images/3x2/TPND-Room-Luxury-Room.jpg" 
+                                 alt="Luxury Room" class="mb-4">
+                            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Palace_New_Delhi/images/3x2/TPND-Orient-Express.jpg" 
+                                 alt="Hotel Restaurant" class="mb-4">
+                            <p>Experience the epitome of luxury at our carefully selected 5-star hotels. Each property offers exceptional 
+                               service, world-class amenities, and stunning accommodations. From plush bedding to gourmet dining, every 
+                               aspect of your stay is designed to provide unparalleled comfort and elegance. Our hotel partners are chosen 
+                               for their reputation in delivering excellent hospitality and maintaining the highest standards of service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sapiModal" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title">sapi Experience</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Palace_New_Delhi/images/3x2/TPND-Room-Luxury-Room.jpg" 
+                                 alt="Luxury Room" class="mb-4">
+                            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Palace_New_Delhi/images/3x2/TPND-Orient-Express.jpg" 
+                                 alt="Hotel Restaurant" class="mb-4">
+                            <p>Experience the epitome of luxury at our carefully selected 5-star hotels. Each property offers exceptional 
+                               service, world-class amenities, and stunning accommodations. From plush bedding to gourmet dining, every 
+                               aspect of your stay is designed to provide unparalleled comfort and elegance. Our hotel partners are chosen 
+                               for their reputation in delivering excellent hospitality and maintaining the highest standards of service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section" id="gallery">
+            <h2 class="section__title text-center mb-5">
+                Some Pictures of<br>The Places
+            </h2>
+            
+            <div class="gallery__container">
+                <div class="gallery__slider">
+                    <div class="gallery__track">
+                        <!-- Gallery Item 1 -->
+                        <div class="gallery__item">
+                            <div class="gallery__image-container">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/03/3f/fd/caption.jpg?w=1400&h=1400&s=1&cx=2294&cy=1952&chk=v1_c3b28b866491ff3722ce" 
+                                     alt="Delhi" 
+                                     class="gallery__img">
+                                <div class="gallery__shadow"></div>
+                                <div class="gallery__content">
+                                    <h3 class="gallery__title">Delhi</h3>
+                                    <div class="gallery__location">
+                                        <i class="ri-map-pin-line"></i>
+                                        <span>India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Gallery Item 2 -->
+                        <div class="gallery__item">
+                            <div class="gallery__image-container">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/03/3f/fd/caption.jpg?w=1400&h=1400&s=1&cx=2294&cy=1952&chk=v1_c3b28b866491ff3722ce" 
+                                     alt="Agra" 
+                                     class="gallery__img">
+                                <div class="gallery__shadow"></div>
+                                <div class="gallery__content">
+                                    <h3 class="gallery__title">Agra</h3>
+                                    <div class="gallery__location">
+                                        <i class="ri-map-pin-line"></i>
+                                        <span>India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Gallery Item 3 -->
+                        <div class="gallery__item">
+                            <div class="gallery__image-container">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/03/3f/fd/caption.jpg?w=1400&h=1400&s=1&cx=2294&cy=1952&chk=v1_c3b28b866491ff3722ce" 
+                                     alt="Mumbai" 
+                                     class="gallery__img">
+                                <div class="gallery__shadow"></div>
+                                <div class="gallery__content">
+                                    <h3 class="gallery__title">Mumbai</h3>
+                                    <div class="gallery__location">
+                                        <i class="ri-map-pin-line"></i>
+                                        <span>India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="gallery__nav gallery__nav--prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button class="gallery__nav gallery__nav--next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="join section" id="join">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Image column (kiri) -->
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="join__image">
+                            <img src="https://onayaresorts.com/wp-content/uploads/2024/03/Balinese-Culture-1.webp" 
+                                 alt="join image" 
+                                 class="join__img">
+                            <div class="join__shadow"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Form column (kanan) -->
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="join__data">
+                            <h2 class="section__title">
+                                Your Journey<br>
+                                Starts Here
+                            </h2>
+                            <p class="join__description">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit, sed do eiusmod tempor 
+                            </p>
+                            <form class="join__form" id="joinForm">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control join__input" placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control join__input" placeholder="Enter Your Phone Number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control join__input" placeholder="Enter Your Email" required>
+                                </div>
+                                <button type="submit" class="join__button">
+                                    Subscribe Our Newsletter <i class="ri-arrow-right-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Other sections remain largely the same structure but using Bootstrap classes -->
+        <!-- ... -->
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4">
+                <!-- Company Info - Left side -->
+                <div class="col-lg-4">
+                    <a href="#" class="footer__logo mb-4">
+                        Sparta Tour
+                    </a>
+                    <p class="footer__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+    
+                <!-- Navigation Links - Right side -->
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <!-- About Links -->
+                        <div class="col-sm-6 col-lg-3">
+                            <h3 class="footer__title">About</h3>
+                            <ul class="footer__links list-unstyled">
+                                <li><a href="#" class="footer__link">About Us</a></li>
+                                <li><a href="#" class="footer__link">Features</a></li>
+                                <li><a href="#" class="footer__link">News & Blog</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Company Links -->
+                        <div class="col-sm-6 col-lg-3">
+                            <h3 class="footer__title">Company</h3>
+                            <ul class="footer__links list-unstyled">
+                                <li><a href="#" class="footer__link">FAQs</a></li>
+                                <li><a href="#" class="footer__link">History</a></li>
+                                <li><a href="#" class="footer__link">Testimonials</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Contact Links -->
+                        <div class="col-sm-6 col-lg-3">
+                            <h3 class="footer__title">Contact</h3>
+                            <ul class="footer__links list-unstyled">
+                                <li><a href="#" class="footer__link">Call Center</a></li>
+                                <li><a href="#" class="footer__link">Support Center</a></li>
+                                <li><a href="#" class="footer__link">Contact Us</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Support Links -->
+                        <div class="col-sm-6 col-lg-3">
+                            <h3 class="footer__title">Support</h3>
+                            <ul class="footer__links list-unstyled">
+                                <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                                <li><a href="#" class="footer__link">Terms & Services</a></li>
+                                <li><a href="#" class="footer__link">Payments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="footer__group">
+                <!-- Social Links -->
+                <div class="footer__social">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </div>
+                <!-- Copyright -->
+                <span class="footer__copy">
+                    &#169; Copyright
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="scrollreveal.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
